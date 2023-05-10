@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task manager</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./style.css"
+  </head>
+  <body>
+    <section class="wrap">
+      <section class="heading">
+        <p class="title">notNotion</p>
+        <p class="sub-heading">
+          Manage And Search Your Pending Tasks In Clicks
+        </p>
+      </section>
+
+      <section class="task_manager">
+        <div class="search_box">
+          <form class="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="search task"
+              autocomplete="off"
+            />
+            <i class="bi bi-x-circle reset"></i>
+          </form>
+        </div>
+
+        <div class="task-box">
+          <ul class="task">
+            <li>
+              <span>Learn JS </span>
+              <i class="bi bi-trash-fill delete"></i>
+            </li>
+          </ul>
+          <form class="add">
+            <input
+              type="text"
+              name="add"
+              placeholder="add task"
+              autocomplete="off"
+            />
+            <input type="submit" value="Add" />
+          </form>
+        </div>
+
+        <div class="message">
+          <span>You have 0 pending tasks</span>
+          <button class="clear">Clear All</button>
+        </div>
+      </section>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
